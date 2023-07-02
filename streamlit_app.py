@@ -16,7 +16,7 @@ streamlit.dataframe(my_fruit_list) #converts CSV data to relational data(table)
 my_fruit_list = my_fruit_list.set_index('Fruit')
 fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado']) # enables user to search and pick from above table
 fruits_to_show = my_fruit_list.loc[fruits_selected] #Access a group of rows and columns by label(s) or a boolean array.
-streamliy.dataframe(fruits_to_show)
+streamlit.dataframe(fruits_to_show)
 
 
 
